@@ -1,0 +1,38 @@
+#- targets:
+#    - '192.168.52.128:8088'
+#  labels:
+#    group: yunwei
+#    app: web
+#    hostname: dev-cadvisor
+#    project: app
+#
+- targets:
+    - '192.168.52.129:8088'
+  labels:
+    group: 21yunwei
+    app: devops
+    hostname: idc-cadvisor
+    project: dev
+    job: app
+    server: local-docker
+
+- targets:
+    - '192.168.52.128:8088'
+  labels:
+    #group: 21yunwei
+    #app: devops
+    #hostname: dev-cadvisor
+    project: dev
+    #job: admin
+    server: dev-docker
+
+- targets:
+    - '192.168.52.128:8088'
+  labels:
+    group: 21yunwei
+    app: devops
+    hostname: uat-cadvisor      #
+    project: uat        #项目
+    job: admin
+    server: uat-docker  #主机
+
