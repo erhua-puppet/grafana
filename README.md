@@ -13,7 +13,7 @@ grafana
 │       ├── alert-rules.yml       #告警监控项
 │       ├── cadvisor.yml          #监控容器
 │       ├── node.yml              #监控主机
-│       └── prometheus.yml        #
+│       └── prometheus.yml        #prometheus主配置文件
 ├── data
 │   ├── grafana
 │   │   ├── csv
