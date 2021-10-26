@@ -1,0 +1,18 @@
+global:
+  smtp_smarthost: 'smtp.126.com:465'    #126邮箱的服务设置，可根据自己要使用的邮箱改变
+  smtp_from: '***'      #填入自己的邮箱
+  smtp_auth_username: '***'     #填入自己的邮箱
+  smtp_auth_password: '***'     #邮箱授权码
+  smtp_require_tls: false
+ 
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 10m
+  receiver: live-monitoring
+ 
+receivers:
+- name: live-monitoring
+  email_configs:
+  - to: '***'       #接收邮件的邮箱

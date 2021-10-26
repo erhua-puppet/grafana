@@ -1,0 +1,38 @@
+#- targets:
+#    - '192.168.52.128:9011'
+#  labels:
+#    group: 21yunwei
+#    app: web
+#    hostname: dev-node
+#    project: uat
+#    job: nginx
+
+- targets:
+    - '192.168.52.129:9011'
+  labels:
+    group: 21yunwei
+    app: localops
+    hostname: local-node
+    project: dev
+    job: nginx
+    nodename: local-docker
+
+- targets:
+    - '192.168.52.128:9011'
+  labels:
+    group: yunwei
+    app: devops
+    hostname: dev-node
+    project: dev
+    job: admin
+    nodename: dev-docker
+
+- targets:
+    - '192.168.52.128:9011'
+  labels:
+    group: 21yunwei
+    app: devops
+    hostname: uat-node
+    project: uat
+    job: admin
+    nodename: uat-docker
